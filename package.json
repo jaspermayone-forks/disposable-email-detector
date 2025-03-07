@@ -4,10 +4,8 @@
   "description": "disposable email detector",
   "main": "index.js",
   "scripts": {
-    "test": "node test/usage.js",
     "build": "tsc",
-    "start": "node index.js",
-    "testpackage": "node test/package.js"
+    "start": "node index.js"
   },
   "keywords": [
     "disposable",
