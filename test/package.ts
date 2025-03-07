@@ -1,6 +1,6 @@
-import disposableEmailDetector from 'disposable-email-detector'
+import disposableEmailDetector from "@jaspermayone/disposable-email-detector";
 
 // Test the disposableEmailDetector function
 (async () => {
-  console.log(await disposableEmailDetector('user69@spamavert.com')); // false
+  console.log(await disposableEmailDetector("user69@spamavert.com")); // false
 })();

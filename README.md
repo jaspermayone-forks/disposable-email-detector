@@ -1,20 +1,14 @@
-# Disposable Email Detector
+# @jaspermayone/disposable-email-detector
 
-[![DeepScan grade](https://deepscan.io/api/teams/23370/projects/26631/branches/850159/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=23370&pid=26631&bid=850159)
-![workflow](https://github.com/IntegerAlex/disposable-email-detector/actions/workflows/main.yml/badge.svg)
-[![DeepSource](https://app.deepsource.com/gh/IntegerAlex/disposable-email-detector.svg/?label=resolved+issues&show_trend=true&token=49_pbJHQLpxvaUFKZ5pbct86)](https://app.deepsource.com/gh/IntegerAlex/disposable-email-detector/)
+> [!IMPORTANT]
+> This is a fork of [IntegerAlex/disposable-email-detectork](https://github.com/IntegerAlex/disposable-email-detectork), with some improvements and bugfixes. Our base version 1.0.0. was based from Alex's version 3.0.0, specifically commit [da406b2](https://github.com/IntegerAlex/disposable-email-detector/commit/da406b2cbcf0478ab49faabda618be1b588763dc)
 
-![NPM Downloads](https://img.shields.io/npm/dt/disposable-email-detector?style=plastic&logo=npm)
-![NPM Version](https://img.shields.io/npm/v/disposable-email-detector)
+![NPM Downloads](https://img.shields.io/npm/dt/@jaspermayone/disposable-email-detector?style=plastic&logo=npm)
+![NPM Version](https://img.shields.io/npm/v/@jaspermayone/disposable-email-detector)
 
 ## Overview
 
-The `disposable-email-detector` is a TypeScript utility designed to identify disposable email addresses, providing developers with a tool to enhance email verification processes.
-
-## Demo 
-
-DEMO : [LIVE](https://disposable-email-detector-demo.vercel.app/)
-DEMO REPO : [REPO](https://github.com/IntegerAlex/disposable-email-detector-demo)
+`@jaspermayone/disposable-email-detector` is a TypeScript utility designed to identify disposable email addresses, providing developers with a tool to enhance email verification processes.
 
 ## Features
 
@@ -32,16 +26,15 @@ DEMO REPO : [REPO](https://github.com/IntegerAlex/disposable-email-detector-demo
 ### Implementation Details
 
 ```javascript
-    npm i disposable-email-detector
+    npm i @jaspermayone/disposable-email-detector
 ```
 
 ```javascript
-    import  disposableEmailDetector  from 'disposable-email-detector';
+import disposableEmailDetector from "@jaspermayone/disposable-email-detector";
 
-    const email = 'test@mailinator.com';
+const email = "test@example.com";
 
-    disposableEmailDetector(email)
-        .then((response) => console.log(response)); //  true 
+disposableEmailDetector(email).then((response) => console.log(response)); //  true
 ```
 
 The disposableEmailDetector function reads a list of disposable email domains from index.json. It checks whether the provided email address belongs to a disposable domain and returns a boolean indicating the result.
@@ -59,4 +52,7 @@ Contributions are welcome! Please refer to the [contributing guidelines](CONTRIB
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+```
+
 ```
